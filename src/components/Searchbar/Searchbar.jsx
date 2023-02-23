@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { toast } from 'react-toastify';
 import { FaAngellist } from 'react-icons/fa';
@@ -51,3 +51,7 @@ export class Searchbar extends Component {
   }
 }
 
+
+Searchbar.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+}
